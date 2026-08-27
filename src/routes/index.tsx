@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import {
   ArrowRight,
@@ -71,18 +72,60 @@ const strip = [
   },
 ];
 
+const heroSlides = [
+  { src: images.heroBanner, alt: "Sura Delice Restaurant and Banquets dining area" },
+  { src: images.interior, alt: "Dining hall interior at Sura Delice" },
+  { src: images.banquet, alt: "Long-table family dining at Sura Delice" },
+  { src: images.celebration, alt: "Celebration table setting at Sura Delice" },
+  { src: images.booth, alt: "Booth seating at Sura Delice" },
+];
+
 function Index() {
+  const [slide, setSlide] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(
+      () => setSlide((s) => (s + 1) % heroSlides.length),
+      5000,
+    );
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <>
       {/* Hero */}
       <section className="relative isolate overflow-hidden">
-        <img
-          src={images.heroBanner}
-          alt="Sura Delice Restaurant and Banquets dining area"
-          loading="eager"
-          decoding="async"
-          className="absolute inset-0 h-full w-full object-cover object-center"
-        />
+        {/* Auto-scrolling background carousel */}
+        {heroSlides.map((s, i) => (
+          <img
+            key={s.src}
+            src={s.src}
+            alt={i === slide ? s.alt : ""}
+            loading={i === 0 ? "eager" : "lazy"}
+            decoding="async"
+            aria-hidden={i !== slide}
+            className={`absolute inset-0 h-full w-full object-cover object-center transition-opacity duration-1000 ${
+              i === slide ? "opacity-100" : "opacity-0"
+            }`}
+          />
+        ))}
+        {/* Carousel dots */}
+        <div className="absolute bottom-6 right-6 z-10 flex items-center gap-2 md:bottom-8 md:right-10">
+          {heroSlides.map((s, i) => (
+            <button
+              key={s.src}
+              type="button"
+              aria-label={`Go to slide ${i + 1}`}
+              aria-current={i === slide}
+              onClick={() => setSlide(i)}
+              className={`h-2 rounded-full transition-all duration-300 ${
+                i === slide
+                  ? "w-6 bg-[oklch(0.703_0.09_78)]"
+                  : "w-2 bg-white/50 hover:bg-white/80"
+              }`}
+            />
+          ))}
+        </div>
         {/* Dark gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-[oklch(0.14_0.04_22/0.55)] via-[oklch(0.14_0.04_22/0.45)] to-[oklch(0.12_0.03_22/0.80)]" />
         <div className="container-royal relative flex min-h-[88vh] flex-col justify-between pb-10 pt-32 md:min-h-[94vh] md:pb-14 md:pt-40">
