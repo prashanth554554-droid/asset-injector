@@ -29,9 +29,9 @@ import {
   restaurant,
 } from "@/data/site";
 
-const title = "The Royal Palace — Multi Cuisine Restaurant & Banquet Hall, Malakpet";
+const title = "Sura Delice Restaurant & Banquets — Multi Cuisine Dining, Hyderabad";
 const description =
-  "Hyderabadi biryani, North Indian, tandoor and Chinese in Azampura, Malakpet, Hyderabad. Indoor banquet hall for 125 seated guests. Open daily 12 PM – 2 AM.";
+  "Mutton Biryani, kebabs, seafood, vegetarian dishes and buffet dining at Sura Delice Restaurant & Banquets, Hyderabad. Family, group and banquet dining daily 12 PM – 2 AM.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -52,17 +52,17 @@ const strip = [
   {
     icon: Utensils,
     title: "Multi Cuisine Menu",
-    text: "Hyderabadi, North Indian, tandoor and Chinese",
+    text: "Biryani, kebabs, seafood, veg dishes and desserts",
   },
   {
     icon: PartyPopper,
-    title: "Banquet Hall",
-    text: "Indoor hall for 125 seated guests",
+    title: "Banquet & Celebrations",
+    text: "Birthdays, festivals and family functions",
   },
   {
     icon: Users,
     title: "Family & Group Dining",
-    text: "Roomy seating open till 2 AM",
+    text: "Booth, long-table and private dining",
   },
   {
     icon: Truck,
@@ -78,7 +78,7 @@ function Index() {
       <section className="relative isolate overflow-hidden">
         <img
           src={images.heroBanner}
-          alt="The Royal Palace Banquet and Dining"
+          alt="Sura Delice Restaurant and Banquets dining area"
           loading="eager"
           decoding="async"
           className="absolute inset-0 h-full w-full object-cover object-center"
@@ -89,7 +89,7 @@ function Index() {
           {/* Hero text */}
           <div className="max-w-2xl">
             <p className="eyebrow mb-5 tracking-[0.25em] text-[oklch(0.703_0.09_78/0.90)]">
-              A Taste Of Royal Hyderabad
+              Sura Delice Restaurant & Banquets
             </p>
             <h1 className="heading-xl text-white">
               Where Great Food Meets
@@ -97,8 +97,8 @@ function Index() {
               Royal Hospitality
             </h1>
             <p className="mt-5 max-w-lg text-base leading-relaxed text-white/80 md:text-lg">
-              Multi-cuisine dining, authentic flavours and memorable celebrations
-              in the heart of Hyderabad.
+              Multi-cuisine dining, family favourites and memorable celebrations
+              in a warm and festive setting.
             </p>
             <div className="mt-9 flex flex-wrap gap-3">
               <Button
@@ -129,7 +129,7 @@ function Index() {
           {/* Bottom location tag */}
           <div className="flex items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.25em] text-white/60">
             <MapPin className="size-3 shrink-0" aria-hidden="true" />
-            Azampura &bull; Malakpet &bull; Hyderabad
+            Sura Delice &bull; Restaurant &amp; Banquets &bull; Hyderabad
           </div>
         </div>
 
@@ -206,7 +206,7 @@ function Index() {
           <Reveal className="card-royal overflow-hidden">
             <img
               src={images.interior}
-              alt="Dining hall of The Royal Palace with maroon and gold interiors"
+              alt="Dining hall at Sura Delice with warm interiors"
               loading="lazy"
               decoding="async"
               width={1600}
@@ -218,18 +218,18 @@ function Index() {
             <SectionHeading
               align="left"
               eyebrow="Dining With Us"
-              title="A Royal Dining Experience"
+              title="A Warm Dining Experience"
             />
             <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
               <p>
-                The Royal Palace is a multi cuisine restaurant and banquet hall in
-                Azampura, Malakpet — warm maroon-and-gold interiors, comfortable
-                family seating and service that runs late into the night.
+                Sura Delice is a multi cuisine restaurant and banquet destination
+                — warm interiors, booth seating, long tables for larger groups and
+                service that runs late into the night.
               </p>
               <p>
-                One kitchen serves Hyderabadi dum biryani, North Indian curries,
-                charcoal tandoor and Indo-Chinese favourites, while the indoor
-                hall hosts everything from birthdays to wedding receptions.
+                One kitchen serves Mutton Biryani, chicken starters and kebabs,
+                fish and prawns, vegetarian dishes, desserts and buffet dining —
+                for family lunches, office lunches and celebrations alike.
               </p>
             </div>
             <div className="mt-8">
@@ -250,7 +250,7 @@ function Index() {
           <SectionHeading
             eyebrow="From The Kitchen"
             title="Taste What Everyone Talks About"
-            description="Hyderabadi dum biryani, tandoori kebabs, North Indian curries and Indo-Chinese favourites."
+            description="Mutton Biryani, Sura Special Chicken Kebab, Prawns Vepudu, buffet dining, desserts and refreshing drinks."
           />
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {cuisines.slice(0, 6).map((c, i) => (
@@ -271,29 +271,29 @@ function Index() {
       {/* Why */}
       <section className="section-y bg-cream">
         <div className="container-royal">
-          <SectionHeading eyebrow="Why Royal Palace" title="Why The Royal Palace" />
+          <SectionHeading eyebrow="Why Sura Delice" title="Why Sura Delice" />
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             <FeatureCard
               icon={Utensils}
               title="Authentic Flavours"
-              description="Hyderabadi, North Indian, tandoor and Chinese prepared in one kitchen."
+              description="Biryani, kebabs, seafood, vegetarian dishes and desserts from one kitchen."
             />
             <FeatureCard
               icon={Users}
               title="Family Friendly"
-              description="Comfortable seating for families and groups, with late kitchen hours."
+              description="Booth seating, long tables and kid-friendly dining for families and groups."
               delay={80}
             />
             <FeatureCard
               icon={PartyPopper}
               title="Celebrations"
-              description="An indoor banquet hall for engagements, birthdays and receptions."
+              description="Birthday, festival and family celebrations in a festive dining atmosphere."
               delay={160}
             />
             <FeatureCard
               icon={MapPin}
               title="Hyderabad Favourite"
-              description={`Rated ${restaurant.rating} by ${restaurant.reviewCount} guests in Malakpet.`}
+              description={`Rated ${restaurant.rating} by ${restaurant.reviewCount} guests in Hyderabad.`}
               delay={240}
             />
           </div>
@@ -306,7 +306,7 @@ function Index() {
           <Reveal className="min-h-[320px]">
             <img
               src={images.banquet}
-              alt="Banquet hall set with round tables and a decorated stage"
+              alt="Long-table banquet dining at Sura Delice"
               loading="lazy"
               decoding="async"
               className="h-full w-full object-cover"
@@ -318,7 +318,7 @@ function Index() {
               Celebrate Your Special Moments
             </h2>
             <p className="mt-4 max-w-xl text-base leading-relaxed text-primary-foreground/85">
-              An indoor banquet hall seating up to 125 guests and up to 200 floating, with in-house veg and non-veg catering.
+              Celebrate special moments in a warm and festive dining atmosphere, with long-table dining, private dining and in-house veg and non-veg catering.
             </p>
             <ul className="mt-8 flex flex-wrap gap-2">
               {banquetOccasions.slice(0, 6).map((o) => (
@@ -361,11 +361,11 @@ function Index() {
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             <ReviewCard
               category="Google Guest"
-              quote="Guests most often highlight the Hyderabadi dum biryani and the tandoori starters."
+              quote="Guests most often highlight the Mutton Biryani and the chicken kebabs."
             />
             <ReviewCard
               category="Google Guest"
-              quote="Families tell us the indoor hall works well for engagements and birthday functions."
+              quote="Families tell us the long tables work well for birthdays and family functions."
               delay={90}
             />
             <ReviewCard
@@ -393,7 +393,7 @@ function Index() {
         <div className="container-royal">
           <SectionHeading
             eyebrow="Gallery"
-            title="Inside The Royal Palace"
+            title="Inside Sura Delice"
             description="Food, interiors, banquet setups and celebration moments from our restaurant."
           />
           <div className="mt-12">
