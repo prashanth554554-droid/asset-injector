@@ -1,33 +1,33 @@
-import heroBanner from "@/assets/sura-interior-booths.png.asset.json";
-import interiorDining from "@/assets/sura-interior-dining.png.asset.json";
-import barLounge from "@/assets/sura-bar-lounge.png.asset.json";
-import boothTable from "@/assets/sura-booth-table.png.asset.json";
-import logoWall from "@/assets/sura-logo-wall.png.asset.json";
-import buffetSpread from "@/assets/sura-buffet.png.asset.json";
-import celebrationTable from "@/assets/sura-celebration-table.png.asset.json";
-import familyLongTable from "@/assets/sura-family-long-table.png.asset.json";
-import muttonBiryani from "@/assets/sura-mutton-biryani.png.asset.json";
-import kebabPlatter from "@/assets/sura-kebab-platter.png.asset.json";
-import prawnsStarter from "@/assets/sura-prawns-starter.png.asset.json";
-import mocktailLayered from "@/assets/sura-mocktail-layered.png.asset.json";
-import mocktailRed from "@/assets/sura-mocktail-red.png.asset.json";
-import dessertSizzler from "@/assets/sura-dessert-sizzler.png.asset.json";
+import heroBanner from "@/assets/sura-interior-booths.png";
+import interiorDining from "@/assets/sura-interior-dining.png";
+import barLounge from "@/assets/sura-bar-lounge.png";
+import boothTable from "@/assets/sura-booth-table.png";
+import logoWall from "@/assets/sura-logo-wall.png";
+import buffetSpread from "@/assets/sura-buffet.png";
+import celebrationTable from "@/assets/sura-celebration-table.png";
+import familyLongTable from "@/assets/sura-family-long-table.png";
+import muttonBiryani from "@/assets/sura-mutton-biryani.png";
+import kebabPlatter from "@/assets/sura-kebab-platter.png";
+import prawnsStarter from "@/assets/sura-prawns-starter.png";
+import mocktailLayered from "@/assets/sura-mocktail-layered.png";
+import mocktailRed from "@/assets/sura-mocktail-red.png";
+import dessertSizzler from "@/assets/sura-dessert-sizzler.png";
 
 export const images = {
-  heroBanner: heroBanner.url,
-  heroBiryani: muttonBiryani.url,
-  interior: interiorDining.url,
-  banquet: familyLongTable.url,
-  celebration: celebrationTable.url,
-  ambience: barLounge.url,
-  booth: boothTable.url,
-  buffet: buffetSpread.url,
-  kebabs: kebabPlatter.url,
-  prawns: prawnsStarter.url,
-  dessert: dessertSizzler.url,
-  mocktail: mocktailLayered.url,
-  mocktailRed: mocktailRed.url,
-  exterior: logoWall.url,
+  heroBanner: heroBanner,
+  heroBiryani: muttonBiryani,
+  interior: interiorDining,
+  banquet: familyLongTable,
+  celebration: celebrationTable,
+  ambience: barLounge,
+  booth: boothTable,
+  buffet: buffetSpread,
+  kebabs: kebabPlatter,
+  prawns: prawnsStarter,
+  dessert: dessertSizzler,
+  mocktail: mocktailLayered,
+  mocktailRed: mocktailRed,
+  exterior: logoWall,
 };
 
 export const restaurant = {
