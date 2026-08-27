@@ -94,7 +94,7 @@ function Index() {
             <h1 className="heading-xl text-white">
               Where Great Food Meets
               <br />
-              Royal Hospitality
+              Warm Hospitality
             </h1>
             <p className="mt-5 max-w-lg text-base leading-relaxed text-white/80 md:text-lg">
               Multi-cuisine dining, family favourites and memorable celebrations
