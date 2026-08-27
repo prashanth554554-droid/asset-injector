@@ -12,8 +12,8 @@ export function Footer() {
             {restaurant.tagline}
           </p>
           <p className="mt-6 text-sm leading-relaxed text-primary-foreground/80">
-            Hyderabadi biryani, North Indian, tandoor and Chinese — served in a
-            royal setting in Malakpet, with an indoor banquet hall for every
+            Mutton Biryani, kebabs, seafood, vegetarian dishes and desserts —
+            served in a warm setting, with banquet and group dining for every
             celebration.
           </p>
         </div>
@@ -64,7 +64,7 @@ export function Footer() {
           <p>
             © {new Date().getFullYear()} {restaurant.name}. All rights reserved.
           </p>
-          <p>Azampura, Malakpet, Hyderabad</p>
+          <p>Restaurant &amp; Banquets · Hyderabad</p>
         </div>
       </div>
     </footer>

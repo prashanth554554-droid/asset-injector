@@ -6,9 +6,9 @@ import { FeatureCard } from "@/components/site/FeatureCard";
 import { Reveal } from "@/components/site/Reveal";
 import { highlights, images, restaurant } from "@/data/site";
 
-const title = "About Us — The Royal Palace, Malakpet Hyderabad";
+const title = "About Us — Sura Delice Restaurant & Banquets, Hyderabad";
 const description =
-  "The story of The Royal Palace: a multi cuisine restaurant and indoor banquet hall in Azampura, Malakpet, Hyderabad, serving Hyderabadi, North Indian, tandoor and Chinese.";
+  "About Sura Delice Restaurant & Banquets: a multi cuisine restaurant and banquet destination in Hyderabad for family dining, group lunches and celebrations.";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -29,10 +29,10 @@ function AboutPage() {
     <>
       <PageHero
         image={images.interior}
-        alt="Interior of The Royal Palace restaurant"
+        alt="Interior of Sura Delice restaurant"
         eyebrow="About"
-        title="A Royal Welcome In Malakpet"
-        description="A multi cuisine kitchen and an indoor banquet hall, under one roof in Azampura."
+        title="A Warm Welcome To Sura Delice"
+        description="A multi cuisine kitchen and a banquet destination, under one roof."
       />
 
       <section className="section-y">
@@ -42,13 +42,13 @@ function AboutPage() {
               align="left"
               eyebrow="Our Story"
               title="Built Around Family Tables"
-              description="The Royal Palace brings together the dishes Hyderabad loves — slow-cooked dum biryani, charcoal tandoor, North Indian curries and Indo-Chinese — in a setting made for family dining. The same kitchen caters our indoor banquet hall, so celebrations get the same food guests come back for."
+              description="Sura Delice brings together Mutton Biryani, chicken starters and kebabs, fish and prawns, vegetarian dishes and desserts in a setting made for family lunches, family dinners, office and group lunches. The same kitchen caters our banquet gatherings, so celebrations get the same food guests come back for."
             />
             <dl className="mt-8 grid gap-4 sm:grid-cols-2">
               <Fact label="Address" value={restaurant.address} />
               <Fact label="Opening Hours" value={`Daily ${restaurant.hours}`} />
-              <Fact label="Banquet Seating" value={restaurant.banquet.seated} />
-              <Fact label="Floating Capacity" value={restaurant.banquet.floating} />
+              <Fact label="Banquet Dining" value={restaurant.banquet.seated} />
+              <Fact label="Gatherings" value={restaurant.banquet.floating} />
             </dl>
             <div className="mt-8 flex flex-wrap gap-3">
               <Button variant="gold" asChild>
@@ -63,7 +63,7 @@ function AboutPage() {
           <Reveal className="card-royal self-start">
             <img
               src={images.ambience}
-              alt="Candlelit table showing the warm ambience of the restaurant"
+              alt="Warm ambience inside Sura Delice"
               loading="lazy"
               decoding="async"
               width={1600}

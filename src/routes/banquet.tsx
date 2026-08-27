@@ -7,9 +7,9 @@ import { EnquiryForm } from "@/components/site/EnquiryForm";
 import { Reveal } from "@/components/site/Reveal";
 import { banquetFeatures, banquetOccasions, images } from "@/data/site";
 
-const title = "Banquet Hall in Malakpet — The Royal Palace, Hyderabad";
+const title = "Banquet & Group Dining — Sura Delice Restaurant & Banquets";
 const description =
-  "Indoor banquet hall in Azampura, Malakpet: up to 125 seated, 200 guests floating, with veg and non-veg catering for weddings, engagements and birthdays.";
+  "Banquet and group dining at Sura Delice, Hyderabad: long-table dining, private dining and veg and non-veg catering for birthdays, festivals and family functions.";
 
 export const Route = createFileRoute("/banquet")({
   head: () => ({
@@ -30,10 +30,10 @@ function BanquetPage() {
     <>
       <PageHero
         image={images.banquet}
-        alt="Banquet hall set with round tables, gold chairs and a decorated stage"
+        alt="Long-table banquet dining at Sura Delice"
         eyebrow="Banquet Hall"
-        title="Your Celebration. Our Royal Setting."
-        description="An indoor hall for up to 125 seated guests and 200 floating, with in-house veg and non-veg catering."
+        title="Your Celebration. Our Festive Setting."
+        description="Celebrate special moments in a warm and festive dining atmosphere, with in-house veg and non-veg catering."
       >
         <Button variant="gold" size="lg" asChild>
           <a href="#enquiry">Request Event Enquiry</a>
@@ -42,7 +42,7 @@ function BanquetPage() {
 
       <section className="section-y">
         <div className="container-royal">
-          <SectionHeading eyebrow="Venue Features" title="What The Hall Offers" />
+          <SectionHeading eyebrow="Venue Features" title="What We Offer" />
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {banquetFeatures.map((f, i) => (
               <FeatureCard key={f.title} {...f} delay={i * 80} />
@@ -58,7 +58,7 @@ function BanquetPage() {
               align="left"
               eyebrow="Perfect For"
               title="Occasions We Host"
-              description="From intimate family functions to full-hall receptions, the same kitchen that serves the restaurant caters your event."
+              description="From small family gatherings to larger group dining, the same kitchen that serves the restaurant caters your event."
             />
             <ul className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2">
               {banquetOccasions.map((o, i) => (
@@ -76,7 +76,7 @@ function BanquetPage() {
           <Reveal className="card-royal">
             <img
               src={images.celebration}
-              alt="Family celebrating with a cake in the banquet hall"
+              alt="Table decorated with balloons for a celebration"
               loading="lazy"
               decoding="async"
               width={1600}

@@ -5,7 +5,7 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * The Royal Palace — design system.
+ * Sura Delice — design system.
  * Brand: maroon #4A151B, gold #C69A4B, background #FBF7F0,
  * cream #F3EBDD, dark #201C1A, muted #6F6660.
  * All colors are oklch tokens; never hardcode colors in components.

@@ -11,9 +11,9 @@ import {
   type GalleryCategory,
 } from "@/data/site";
 
-const title = "Gallery — Food, Restaurant & Banquet | The Royal Palace";
+const title = "Gallery — Food, Restaurant & Banquet | Sura Delice";
 const description =
-  "Photo gallery of The Royal Palace: signature dishes, the dining hall, banquet setups, celebrations, exterior and evening ambience.";
+  "Photo gallery of Sura Delice: signature dishes, drinks, the dining hall, booth seating, long-table banquet dining, celebrations and ambience.";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
@@ -44,7 +44,7 @@ function GalleryPage() {
     <>
       <PageHero
         image={images.exterior}
-        alt="Evening exterior of The Royal Palace"
+        alt="Sura Delice signage inside the restaurant"
         eyebrow="Gallery"
         title="Gallery"
         description="A look at the food, the halls and the celebrations hosted here."
@@ -52,7 +52,7 @@ function GalleryPage() {
 
       <section className="section-y">
         <div className="container-royal">
-          <SectionHeading eyebrow="Browse" title="Moments At The Royal Palace" />
+          <SectionHeading eyebrow="Browse" title="Moments At Sura Delice" />
 
           <div
             className="mt-10 flex flex-wrap justify-center gap-2"

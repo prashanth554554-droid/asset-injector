@@ -8,9 +8,9 @@ import { LocationMap } from "@/components/site/LocationMap";
 import { Reveal } from "@/components/site/Reveal";
 import { images, mapsDirectionsUrl, restaurant } from "@/data/site";
 
-const title = "Contact & Location — The Royal Palace, Malakpet Hyderabad";
+const title = "Contact & Location — Sura Delice Restaurant & Banquets";
 const description =
-  "Visit The Royal Palace at 16-7-390/A, Azampura, Malakpet, Hyderabad 500024. Call +91 98491 92830. Open daily 12:00 PM – 2:00 AM.";
+  "Visit Sura Delice Restaurant & Banquets in Hyderabad. Call +91 98491 92830 for tables, takeaway and banquet enquiries. Open daily 12:00 PM – 2:00 AM.";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -31,10 +31,10 @@ function ContactPage() {
     <>
       <PageHero
         image={images.exterior}
-        alt="Evening exterior of The Royal Palace"
+        alt="Sura Delice signage inside the restaurant"
         eyebrow="Contact"
-        title="Visit The Royal Palace"
-        description="Azampura, Malakpet — open daily from noon until 2 AM."
+        title="Visit Sura Delice"
+        description="Restaurant & Banquets — open daily from noon until 2 AM."
       >
         <Button variant="gold" size="lg" asChild>
           <a href={restaurant.phoneHref}>

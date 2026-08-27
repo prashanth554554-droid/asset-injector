@@ -6,9 +6,9 @@ import { FoodCard } from "@/components/site/FoodCard";
 import { Reveal } from "@/components/site/Reveal";
 import { cuisines, images, menuSections } from "@/data/site";
 
-const title = "Menu — Biryani, Tandoor, Curries & Chinese | The Royal Palace";
+const title = "Menu — Biryani, Kebabs, Seafood & Desserts | Sura Delice";
 const description =
-  "Explore The Royal Palace menu: Hyderabadi dum biryani, kebabs from the tandoor, North Indian curries, Indo-Chinese and fresh breads. Veg and non-veg.";
+  "Explore the Sura Delice menu: Mutton Biryani, Sura Special Chicken Kebab, Godavari Chepa Vepudu, Prawns Vepudu, soups, vegetarian dishes, desserts and drinks.";
 
 export const Route = createFileRoute("/menu")({
   head: () => ({
@@ -29,10 +29,10 @@ function MenuPage() {
     <>
       <PageHero
         image={images.kebabs}
-        alt="Tandoori kebab platter with mint chutney"
+        alt="Sura Special Chicken Kebab platter"
         eyebrow="Multi Cuisine"
         title="Our Menu"
-        description="Hyderabadi, North Indian, tandoor and Chinese — in veg and non-veg."
+        description="Biryani, kebabs, seafood, soups, vegetarian dishes and desserts — veg and non-veg."
       >
         <Button variant="gold" size="lg" asChild>
           <Link to="/reservations">Book a Table</Link>

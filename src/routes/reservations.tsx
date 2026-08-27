@@ -6,9 +6,9 @@ import { SectionHeading } from "@/components/site/SectionHeading";
 import { ReservationForm } from "@/components/site/ReservationForm";
 import { images, restaurant } from "@/data/site";
 
-const title = "Reserve Your Table — The Royal Palace, Malakpet";
+const title = "Reserve Your Table — Sura Delice Restaurant & Banquets";
 const description =
-  "Send a table reservation request to The Royal Palace, Azampura Malakpet. Our team calls you back to confirm. Open daily 12:00 PM – 2:00 AM.";
+  "Send a table reservation request to Sura Delice Restaurant & Banquets, Hyderabad. Our team calls you back to confirm. Open daily 12:00 PM – 2:00 AM.";
 
 export const Route = createFileRoute("/reservations")({
   head: () => ({
@@ -29,7 +29,7 @@ function ReservationsPage() {
     <>
       <PageHero
         image={images.interior}
-        alt="Set dining tables inside The Royal Palace"
+        alt="Set dining tables inside Sura Delice"
         eyebrow="Reservations"
         title="Reserve Your Table"
         description="Send us your preferred date and time — our team will call you to confirm."

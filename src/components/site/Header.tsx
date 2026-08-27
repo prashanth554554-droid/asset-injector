@@ -34,10 +34,10 @@ export function Header() {
           </div>
           <div className="flex flex-col">
             <span className="font-display text-base font-bold text-white md:text-lg">
-              THE ROYAL PALACE
+              SURA DELICE
             </span>
             <span className="text-[9px] uppercase tracking-[0.22em] text-white/60">
-              Multi Cuisine Restaurant &amp; Banquet
+              Restaurant &amp; Banquets
             </span>
           </div>
         </Link>

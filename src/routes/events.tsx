@@ -7,9 +7,9 @@ import { EnquiryForm } from "@/components/site/EnquiryForm";
 import { Reveal } from "@/components/site/Reveal";
 import { eventTypes, images, restaurant } from "@/data/site";
 
-const title = "Events — Make Every Occasion Memorable | The Royal Palace";
+const title = "Events — Make Every Occasion Memorable | Sura Delice";
 const description =
-  "Birthdays, engagements, wedding functions, family gatherings, corporate events and anniversaries hosted in our indoor banquet hall in Malakpet, Hyderabad.";
+  "Birthday celebrations, festival dining, family gatherings, office lunches and banquet events hosted at Sura Delice Restaurant & Banquets, Hyderabad.";
 
 export const Route = createFileRoute("/events")({
   head: () => ({
@@ -30,10 +30,10 @@ function EventsPage() {
     <>
       <PageHero
         image={images.celebration}
-        alt="Family celebrating with a cake at the banquet hall"
+        alt="Table decorated with balloons for a celebration"
         eyebrow="Events"
         title="Make Every Occasion Memorable"
-        description={`${restaurant.banquet.seated}, ${restaurant.banquet.floating.toLowerCase()} — with in-house veg and non-veg catering.`}
+        description={`${restaurant.banquet.seated} and ${restaurant.banquet.floating.toLowerCase()} — with in-house veg and non-veg catering.`}
       >
         <Button variant="gold" size="lg" asChild>
           <a href="#plan">Plan Your Event</a>

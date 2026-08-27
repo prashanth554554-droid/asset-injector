@@ -7,9 +7,9 @@ import { FeatureCard } from "@/components/site/FeatureCard";
 import { Reveal } from "@/components/site/Reveal";
 import { images, restaurant } from "@/data/site";
 
-const title = "Order Online — Delivery & Takeaway | The Royal Palace";
+const title = "Order Online — Delivery & Takeaway | Sura Delice";
 const description =
-  "Order Hyderabadi biryani, kebabs, curries and Chinese from The Royal Palace, Malakpet for delivery or takeaway. Call +91 98491 92830 to place an order.";
+  "Order Mutton Biryani, kebabs, seafood and vegetarian dishes from Sura Delice, Hyderabad for delivery or takeaway. Call +91 98491 92830 to place an order.";
 
 export const Route = createFileRoute("/order-online")({
   head: () => ({
@@ -49,7 +49,7 @@ function OrderOnlinePage() {
     <>
       <PageHero
         image={images.heroBiryani}
-        alt="Hyderabadi chicken dum biryani served in a copper handi"
+        alt="Mutton biryani served with raita and salan"
         eyebrow="Order"
         title="Your Favourite Food, Just a Few Clicks Away"
         description="Delivery, takeaway and online ordering from our multi cuisine kitchen."

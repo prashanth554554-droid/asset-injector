@@ -7,9 +7,9 @@ import { ReviewCard } from "@/components/site/ReviewCard";
 import { Reveal } from "@/components/site/Reveal";
 import { images, mapsReviewsUrl, restaurant, reviewCategories } from "@/data/site";
 
-const title = "Reviews — What Our Guests Say | The Royal Palace";
+const title = "Reviews — What Our Guests Say | Sura Delice";
 const description =
-  "Guest feedback themes for The Royal Palace, Malakpet: food, service, ambience, banquet and family dining. Rated 4.0 / 5 across 1,300+ reviews.";
+  "Guest feedback themes for Sura Delice Restaurant & Banquets: food, service, ambience, banquet and family dining in Hyderabad.";
 
 export const Route = createFileRoute("/reviews")({
   head: () => ({
@@ -26,12 +26,12 @@ export const Route = createFileRoute("/reviews")({
 });
 
 const themes: Record<string, string> = {
-  Food: "Guests most often mention the Hyderabadi dum biryani, Chicken 65 and the tandoori kebabs.",
+  Food: "Guests most often mention the Mutton Biryani, the chicken kebabs and the prawns starters.",
   Service: "Feedback frequently notes attentive table service and the late kitchen hours.",
   Ambience:
-    "The maroon-and-gold dining hall and warm evening lighting come up often in guest comments.",
+    "The warm dining hall, booth seating and festive evening lighting come up often in guest comments.",
   Banquet:
-    "Families mention the indoor hall for engagements, birthdays and receptions with in-house catering.",
+    "Families mention long-table dining for birthdays, festivals and family functions with in-house catering.",
   "Family Dining":
     "Roomy seating and both veg and non-veg options are commonly appreciated by larger groups.",
 };

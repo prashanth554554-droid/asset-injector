@@ -81,8 +81,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { name: "author", content: "The Royal Palace" },
-      { property: "og:site_name", content: "The Royal Palace" },
+      { name: "author", content: "Sura Delice Restaurant & Banquets" },
+      { property: "og:site_name", content: "Sura Delice Restaurant & Banquets" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -102,8 +102,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Restaurant",
-          name: "The Royal Palace Multi Cuisine Restaurant & Banquet Hall",
-          servesCuisine: ["Hyderabadi", "North Indian", "Chinese", "Tandoori"],
+          name: "Sura Delice Restaurant & Banquets",
+          servesCuisine: ["Indian", "Biryani", "Seafood", "Multi Cuisine"],
           telephone: "+91 98491 92830",
           openingHours: "Mo-Su 12:00-02:00",
           address: {
